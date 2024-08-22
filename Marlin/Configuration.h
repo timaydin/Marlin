@@ -782,9 +782,9 @@
   //#define DEFAULT_bedKi .023
   //#define DEFAULT_bedKd 305.4
   // CoreMax 300 Pro
-  #define DEFAULT_bedKp 75.38
-  #define DEFAULT_bedKi 13.86
-  #define DEFAULT_bedKd 273.36
+  #define DEFAULT_bedKp 161.12
+  #define DEFAULT_bedKi 31.47
+  #define DEFAULT_bedKd 549.95
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
