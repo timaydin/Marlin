@@ -669,7 +669,7 @@
 #define PIDTEMP           // See the PID Tuning Guide at https://reprap.org/wiki/PID_Tuning
 //#define MPCTEMP         // ** EXPERIMENTAL ** See https://marlinfw.org/docs/features/model_predictive_control.html
 
-#define PID_MAX  255      // Limit hotend current while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
+#define PID_MAX    200    // Limit hotend current while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #define PID_K1     0.95   // Smoothing factor within any PID loop
 
 #if ENABLED(PIDTEMP)
@@ -685,9 +685,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // Biqu H2
-    #define DEFAULT_Kp 8.43
-    #define DEFAULT_Ki 0.35
-    #define DEFAULT_Kd 50.90
+    #define DEFAULT_Kp 14.96
+    #define DEFAULT_Ki 0.87
+    #define DEFAULT_Kd 64.62
     // BMG/Super volcano
     //#define DEFAULT_Kp 16.14
     //#define DEFAULT_Ki 0.76
@@ -1736,7 +1736,7 @@
 
 // The size of the printable area
 #define X_BED_SIZE 300
-#define Y_BED_SIZE 280
+#define Y_BED_SIZE 300
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
