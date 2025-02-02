@@ -70,9 +70,9 @@
   #warning "Warning! Don't use dummy thermistors (998/999) for final build!"
 #endif
 
-//#if NONE(HAS_RESUME_CONTINUE, HOST_PROMPT_SUPPORT)
-//  #warning "Your Configuration provides no method to acquire user feedback!"
-//#endif
+#if NONE(HAS_RESUME_CONTINUE, HOST_PROMPT_SUPPORT)
+  #warning "Your Configuration provides no method to acquire user feedback!"
+#endif
 
 #if MB(DUE3DOM_MINI) && PIN_EXISTS(TEMP_2) && !TEMP_SENSOR_BOARD
   #warning "Onboard temperature sensor for BOARD_DUE3DOM_MINI has moved from TEMP_SENSOR_2 (TEMP_2_PIN) to TEMP_SENSOR_BOARD (TEMP_BOARD_PIN)."
