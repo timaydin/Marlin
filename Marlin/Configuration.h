@@ -1200,6 +1200,7 @@
 
 #define DEFAULT_FEEDRATE_MM_M 120
 #define DIAG_JUMPERS_REMOVED 1
+#define SPINDLE_LASER_ENA_PIN EXP1_08_PIN
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
